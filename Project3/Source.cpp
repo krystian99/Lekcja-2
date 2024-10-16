@@ -29,6 +29,11 @@ int main()
 			{
 				if (napis[i] != napis[j])
 					break; // jedna instrukcja wiêc mo¿e byæ bez klamerek {}
+				else // je¿eli jest wiecej instrukcji to wstaw klamre {}
+				{
+					i = j;
+					break; // zakoncz pêtlê z j
+				}
 			}
 			// jak pêtla z 'i' bedzie miala nastepny krok to dodaj do niej 1
 		}
